@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* COLORES
+Rosa claro>     #FBCCFF
+Celeste claro>  #76CEFF 
+Claro>          #EDEDED
+Morado oscuro>  #710866*/
+
+a{
+    font-weight: 400;
+    text-decoration: none;
+}
+    a:hover{
+        color: #710866;
+    }
+ul{
+    list-style: none;
+}
+h1{
+    width: 300px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #EDEDED;
+}
+h2{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+h4{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+h6{
+    font-size: 14px;
+    font-weight: 400;
+    color: #710866;
+}
+p{
+    font-size: 14px;
+    color: #838383;
+}
+label{
+    font-size: 14px;
+}
+input{
+    min-width: 100px;
+    padding: 10px 16px;
+    border: .5px solid ;
+    border-top-left-radius: 25px;
+}
+body{
+    background: url(/imagenes/circle-degrad2.png);
+    background-position: -200px;
+    filter: invert(150px);
+}
+
+
+header{
+    display: inline-block;
+    /* background: linear-gradient(#000, transparent); */
+    background-color: #EDEDED;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 -10px 25px #242424;
+}
+nav{
+    width: 1040px;
+    margin: auto;
+}
+
+nav>ul>li{
+    width: 100px;
+    display: inline-block;
+    margin: 10px 0;
+}
+nav>ul>li:first-child{
+    width: calc(100% - 500px);
+}
+
+.nav-logo{
+    height: 60px;
+    background-color: #710866;
+}
+
+
+#sliders{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    margin: 0;
+}
+
+.s-degradado{
+    width: 100%;
+    height: 100%;
+    background: url(/imagenes/banner1.jpg);
+    background-size: cover;
+    background-position: 0 -950px;
+    
+}
+
+
+
+.slider01{
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(#7108661a, #242424 550px 80%);
+    padding: 200px;
+    box-sizing: border-box;
+}
+h1{
+    margin-bottom: 40px;
+}
+
+.puntos{
+    padding: 5px;
+    position: absolute;
+    top: 400px;
+    right: 200px;
+}
+    .p-02, .p-03{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 100px;
+        margin: 2px;
+        background-color: #F476FF;
+    }
+    .p-01{
+        display: inline-block;
+        width: 30px;
+        height: 8px;
+        border-radius: 100px;
+        margin: 2px;
+        background-color: #710866;
+    }
+
+
+
+.button{
+    display: inline-block;
+    padding: 8px 32px;
+    background-color: #F476FF;
+    color: #710866;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border: 0;
+}
+.button:hover{
+    background-color: #710866;
+    color: #F476FF;
+    cursor: pointer;
+    /* box-shadow: 0 0 25px #A80FB6; */
+}
+
+
+
+
+
+
+
+
+
+article{
+    margin: 120px 200px;
+}
+
+
+
+h2{
+    width: 300px;
+}
+.p-grande{
+    width: 300px;
+}
+#intro{
+    position: relative;
+}
+#intro>div{
+    display: inline-block;
+}
+.img-intro{
+    width: 550px;
+    height: 385px;
+    background: url(/imagenes/fotos-intro.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -120px;
+    right: 0;
+    /* opacity: 8%; */
+}
+
+
+
+
+
+
+#card-slider{
+    position: relative;
+}
+
+.cs-guia{
+    position: absolute;
+    top: 10px;
+    left: 450px;
+}
+.cs-guia>h6{
+    display: inline;
+    margin: 0 5px;
+}
+.cs-guia>span{
+    display: inline-block;
+    width: 450px;
+    height: 0.5px;
+    margin: auto;
+    background-color: #710866;
+}
+
+.cscc{
+    display: inline-block;
+    width: 300px;
+    margin: 0 50px;
+}
+    .cscc>p{
+        margin-bottom: 20px;
+    }
+.imgRec{
+    width: 400px;
+    height: 250px;
+    border-radius: 0 100px 0 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cs-flechas{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.cs-flechas>a{
+    margin: 0 15px;
+}
+.fa-arrow-right-long{
+    border: 1px solid #242424;
+    border-radius: 100px;
+    padding: 8px 32px;
+}
+
+
+
+
+#recomendation>p{
+    width: 300px;
+    position: relative;
+}
+.r-fila{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    left: 350px;
+    overflow-x: scroll;
+}
+.card-cuadrado{
+    width: 250px;
+    display: inline-block;
+    margin: 0 12px;
+}
+    .card-cuadrado>img{
+        width: 250px;
+        height: 250px;
+        border-top-left-radius: 100px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .icon-meat{
+        width: 450px;
+        height: 450px;
+        background: url(/imagenes/carne-icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+    }
+    .cs-flechas2{
+        position: absolute;
+        right: 200px;
+    }
+    .cs-flechas2>a{
+        margin: 0 15px;
+    }
+
+
+
+#recomendation>section{
+    margin-bottom: 120px;
+}
+    .icon-drink{
+        width: 400px;
+        height: 400px;
+        background: url(/imagenes/alcohol-icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+    }
+
+
+
+
+#adside{
+    width: 14%;
+    display: inline-block;
+    margin: 150px 50px 150px 200px;
+}
+#adside>span{
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    margin: 5px 0;
+    background-color: #242424;
+}
+
+#carta{
+    display: inline-block;
+    margin: 150px 200px 150px 0;
+}
+.c-carne{
+    width: 100%;
+}
+
+
+
+
+
+#bandas{
+    /* margin: 150px 0; */
+}
+.b-1{
+    position: relative;
+}
+.dp{
+    width: 100%;
+    height: 350px;
+    padding: 150px 700px 150px 100px;
+    box-sizing: border-box;
+    position: absolute;
+    background: linear-gradient(to right, #242424 30%, transparent);
+}
+.bd{
+    height: 350px;
+    
+}
+    .bd1{
+        background: url(/imagenes/banda1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 120px -250px;
+    }
+    .bd2{
+        background: url(/imagenes/banda2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 120px -250px;
+    }
+    .bd3{
+        background: url(/imagenes/banda3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 120px -250px;
+    }
+
+
+
+
+    .v-caja{
+        display: inline-block;
+        width: 300px;
+        border: 1px solid #242424;
+        border-radius: 100px 0 100px 0;
+        padding: 20px;
+        margin: 10px;
+    }
+
+
+
+
+.mapa{
+    width: 100%;
+    height: 350px;
+    background: url(/imagenes/mapimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.img-contact{
+    width: 50%;
+    height: 400px;
+    background: url(/imagenes/licor2-intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 50px;
+}
+.content-contact{
+    display: inline-block;
+
+}
+
+
+
+
+
+footer{
+    width: 100%;
+    padding: 20px 200px;
+    box-sizing: border-box;
+    background-color: #F476FF11;
+    /* border-top: 1px solid #710866; */
+}
+.i-footer{
+    display: inline-block;
+    margin: 0 50px;
+}
+    .i-f{
+        display: inline-block;
+        margin: 0 5px;
+    }
