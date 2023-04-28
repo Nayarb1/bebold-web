@@ -4,141 +4,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="/css/estilo.css">
-    <link rel="icon" href="" type="image/png" href="./imagenes/">
-    <title>MARCA</title>
+    
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilobostraps.css">
+    <link rel="icon" href="" type="image/png" href="#">
+    <title>Bebold</title>
 </head>
 <body>
     
     <header>
-
-        <nav>
-            <ul>
-                <li class="nav-logo">
-                    <a href="/Index.html"><img src="./imagenes/..." alt="MARCA" name="MARCA"></a>
-                </li>
-                <li>
-                    <a href="/subpaginas/carta.html">Carta</a>
-                </li>
-                <li><a href="/subpaginas/horario.html">Horario</a></li>
-                <li><a href="/subpaginas/nosotros.html">Nosotros</a></li>
-                <li>
-                    <a href="/subpaginas/reserva.html" class="button">Reserva</a>
-                </li>
-            </ul>
-        </nav>
-
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../Index.html"><img src="../imagenes/Logo-bebold-sm2.png" alt="Bebold"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../subpaginas/carta.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../subpaginas/horario.html">Horario</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../subpaginas/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../subpaginas/reserva.html">Reserva</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
     </header>
 
-    
-    <article id="adside">
-        <strong>Filtro</strong>
-        <span></span>
-        <ul>
-            <li><a href="#">Comidas</a></li>
-            <li><a href="#">Bebidas</a></li>
-        </ul>
-    </article>
 
 
-    <article id="carta">
 
+<section class="row m-5 p-5">
+    <!-- id="adside" -->
+    <div class="container container-adside p-4 col-lg-2">
+        <div class="adside">
+            <strong>Filtro</strong>
+            <span></span>
+            <ul>
+                <li><a href="carta">Comidas</a></li>
+                <li><a href="#">Bebidas</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- --------------------------------- CARTA -->
+    <div id="carta" class="container col-lg-10">
         <section class="c-carne">
             <h2>Comidas</h2>
-
-            <div class="">
-                <div class="card-cuadrado">
-                    <img src="/imagenes/hamburguesa-intro.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. (85 person)</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/hamburguesa-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-cuadrado">
-                    <img src="/imagenes/papas-intro.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. (85 person)</p>
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/papas-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-cuadrado">
-                    <img src="/imagenes/tacos-intro.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. (85 person)</p>
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/tacos-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/tacos2-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/hamburguesa-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/papas-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/papas-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <br>
-
-            <div class="">
-                <div class="card-cuadrado">
-                    <img src="/imagenes/hamburguesa-intro.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. (85 person)</p>
-                </div>
-                <div class="card-cuadrado">
-                    <img src="/imagenes/papas-intro.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. (85 person)</p>
-                </div>
-                <div class="card-cuadrado">
-                    <img src="/imagenes/tacos-intro.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. (85 person)</p>
-                </div>
-            </div>
-
         </section>
-
-
         <br><br><br>
-
-
-
-        <section class="c-carne">
+        <section id="#" class="c-carne">
             <h2>Bebidas</h2>
-
-            <div class="">
-                <div class="card-cuadrado">
-                    <img src="/imagenes/licor-intro.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. (85 person)</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/licor-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-cuadrado">
-                    <img src="/imagenes/licor2-intro.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. (85 person)</p>
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/licor2-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-cuadrado">
-                    <img src="/imagenes/licor-intro.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. (85 person)</p>
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/licor-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/licor-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/licor2-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/licor-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../imagenes/papas-intro.jpg" class="img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below. (85 person)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <br>
-
-            <div class="">
-                <div class="card-cuadrado">
-                    <img src="/imagenes/licor-intro.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. (85 person)</p>
-                </div>
-                <div class="card-cuadrado">
-                    <img src="/imagenes/licor2-intro.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. (85 person)</p>
-                </div>
-                <div class="card-cuadrado">
-                    <img src="/imagenes/licor-intro.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. (85 person)</p>
-                </div>
-            </div>
-
         </section>
-
-
-
-
-    </article>
+    </div>
+</section>
 
 
 
@@ -146,27 +205,32 @@
 
 
 
-
-    <footer>
-        <a href="/Index.html"><img src="./imagenes/" alt="LOGO" class="i-footer"></a>
-        <ul class="i-footer">
-            <li>
-                <a href="https://web.whatsapp.com/">+51 123 456 789</a>
-            </li>
-            <li>
-                <a href="https://www.google.com/intl/es-419/gmail/about/">info@marca.com</a>
-            </li>
-            <li>
-                <a href="https://www.google.com.pe/maps">Ubicación</a>
-            </li>
-        </ul>
-        <ul class="i-footer">
-            <li class="i-f"><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></li>
-            <li class="i-f"><a href="https://www.instagram.com/tony.cff/"><i class="fa-brands fa-instagram"></i></a></li>
-            <li class="i-f"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-            <li class="i-f"><a href="https://www.google.com.pe/maps"><i class="fa-solid fa-location-dot"></i></a></li>
-        </ul>
-        <a href="https://www.linkedin.com/in/cumpab/" class="i-footer">Design and developer by <strong>Anthony Cumpa</strong></a>
+    <footer class="container-fluid mt-5">
+        <div class="container px-5 btw">
+            <div class="row g-3 align-items-center">
+                <div class="col-lg-2 d-lg-block d-md-none d-sm-none">
+                    <a href="Index.html">
+                        <img src="../imagenes/Logo-bebold-sm2.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="https://www.google.com/maps">Saenz Peña 605, Chiclayo, Peru</a> <br>
+                    <a href="https://web.whatsapp.com/"><span></span>+51 991 555 775</a> <br>
+                    <a href="https://www.google.com/intl/es-419/gmail/about/">info@marca.com</a>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="i-footer">
+                        <li class="i-f"><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li class="i-f"><a href="https://www.instagram.com/tony.cff/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="i-f"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="i-f"><a href="https://www.google.com.pe/maps"><i class="fa-solid fa-location-dot"></i></a></li>
+                    </ul>
+                    <a href="https://www.linkedin.com/in/cumpab/" class="i-footer">Design and developer by <strong>Anthony Cumpa</strong></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

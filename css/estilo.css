@@ -78,6 +78,9 @@ header{
     box-shadow: 0 -10px 25px #242424;
 }
 nav{
+    margin: 0 100px 0 100px;
+}
+/* nav{
     width: 1040px;
     margin: auto;
 }
@@ -89,7 +92,7 @@ nav>ul>li{
 }
 nav>ul>li:first-child{
     width: calc(100% - 500px);
-}
+} */
 
 .nav-logo{
     height: 60px;
@@ -183,12 +186,12 @@ article{
 
 
 
-h2{
+/* h2{
     width: 300px;
 }
 .p-grande{
     width: 300px;
-}
+} */
 #intro{
     position: relative;
 }
@@ -242,7 +245,7 @@ h2{
         margin-bottom: 20px;
     }
 .imgRec{
-    width: 400px;
+    width: 100%;
     height: 250px;
     border-radius: 0 100px 0 100px;
     object-fit: cover;
@@ -308,10 +311,10 @@ h2{
     }
 
 
-
+/* 
 #recomendation>section{
     margin-bottom: 120px;
-}
+} */
     .icon-drink{
         width: 400px;
         height: 400px;
@@ -325,7 +328,7 @@ h2{
 
 
 
-#adside{
+/* #adside{
     width: 14%;
     display: inline-block;
     margin: 150px 50px 150px 200px;
@@ -336,12 +339,27 @@ h2{
     height: 0.5px;
     margin: 5px 0;
     background-color: #242424;
+} */
+.container-adside{
+    position: relative;
+}
+.adside{
+    position: sticky;
+    top: 100px;
+}
+.adside>span{
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    margin: 5px 0;
+    background-color: #242424;
 }
 
-#carta{
+/* #carta{
     display: inline-block;
+    width: 86%;
     margin: 150px 200px 150px 0;
-}
+} */
 .c-carne{
     width: 100%;
 }
@@ -350,38 +368,30 @@ h2{
 
 
 
-#bandas{
-    /* margin: 150px 0; */
-}
-.b-1{
-    position: relative;
-}
-.dp{
+.aa{
     width: 100%;
     height: 350px;
-    padding: 150px 700px 150px 100px;
-    box-sizing: border-box;
-    position: absolute;
     background: linear-gradient(to right, #242424 30%, transparent);
 }
-.bd{
-    height: 350px;
-    
+.bd1>div>h4{
+    color: #EDEDED;
 }
     .bd1{
-        background: url(/imagenes/banda1.jpg);
+        width: 100%;
+        height: 350px;
+        background: url(../imagenes/banda1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 120px -250px;
     }
     .bd2{
-        background: url(/imagenes/banda2.jpg);
+        background: url(../imagenes/banda2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 120px -250px;
     }
     .bd3{
-        background: url(/imagenes/banda3.jpg);
+        background: url(../imagenes/banda3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 120px -250px;
@@ -429,8 +439,6 @@ h2{
 
 
 
-
-
 footer{
     width: 100%;
     padding: 20px 200px;
@@ -438,10 +446,10 @@ footer{
     background-color: #F476FF11;
     /* border-top: 1px solid #710866; */
 }
-.i-footer{
+/* .i-footer{
     display: inline-block;
     margin: 0 50px;
-}
+} */
     .i-f{
         display: inline-block;
         margin: 0 5px;

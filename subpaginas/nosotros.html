@@ -4,36 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="/css/estilo.css">
-    <link rel="icon" href="" type="image/png" href="./imagenes/">
-    <title>MARCA</title>
+    
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilobostraps.css">
+    <link rel="icon" href="" type="image/png" href="#">
+    <title>Bebold</title>
 </head>
 <body>
     
     <header>
-
-        <nav>
-            <ul>
-                <li class="nav-logo">
-                    <a href="/Index.html"><img src="./imagenes/..." alt="MARCA" name="MARCA"></a>
-                </li>
-                <li>
-                    <a href="/subpaginas/carta.html">Carta</a>
-                </li>
-                <li><a href="/subpaginas/horario.html">Horario</a></li>
-                <li><a href="/subpaginas/nosotros.html">Nosotros</a></li>
-                <li>
-                    <a href="/subpaginas/reserva.html" class="button">Reserva</a>
-                </li>
-            </ul>
-        </nav>
-
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../Index.html"><img src="../imagenes/Logo-bebold-sm2.png" alt="Bebold"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../subpaginas/carta.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../subpaginas/horario.html">Horario</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../subpaginas/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../subpaginas/reserva.html">Reserva</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
     </header>
 
 
 
-    <article id="sliders">
+    <!---------------------------- SLIDER PRINCIPAL - BANNER -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators c-i-me">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagenes/banner1.jpg" class="imgslider d-block w-100" alt="...">
+            <div class="carousel-degradado"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Noche de zumitos</h2>
+                <p>Pasa una noche agradable, entre copas, amigos y musica.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/banda2.jpg" class="imgslider d-block w-100" alt="...">
+            <div class="carousel-degradado"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Noche de zumitos</h2>
+                <p>Pasa una noche agradable, entre copas y musica.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/banda3.jpg" class="imgslider d-block w-100" alt="...">
+            <div class="carousel-degradado"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Noche de zumitos</h2>
+                <p>Pasa una noche agradable, entre copas y musica.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- <article id="sliders">
 
         <div class="s-degradado"></div>
         <div class="slider01">
@@ -46,13 +99,78 @@
             <a href="#"><span class="p-02"></span></a>
             <a href="#"><span class="p-03"></span></a>
         </div>
-    </article>
+    </article> -->
 
 
 
 
+<!-- ----------------------------------------- HORARIO -->
+<div class="container my-5 py-5 px-lg-5 px-sm-0">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide px-5">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button"       data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6">
+                        <h2>De Lunes a Sabado</h2>
+                        <img src="../imagenes/reserva-intro.jpg" alt="reservación" class="imgRec V-PC">
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="mt-lg-5 pt-lg-5 pt-3">
+                            <h4>7pm</h4>
+                            <p>Separa la mesa de tu noche. Escríbenos por whatsapp para reservar una mesa.</p>
+                        </div>
+                        <button type="button" class="btn-one" href="../subpaginas/reserva.html">Reserva</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6">
+                        <h2>De Lunes a Sabado</h2>
+                        <img src="../imagenes/reserva-intro.jpg" alt="reservación" class="imgRec V-PC">
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="mt-lg-5 pt-lg-5 pt-3">
+                            <h4>10pm</h4>
+                            <p>Separa la mesa de tu noche. Escríbenos por whatsapp para reservar una mesa.</p>
+                        </div>
+                        <button type="button" class="btn-one" href="../subpaginas/reserva.html">Reserva</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6">
+                        <h2>De Lunes a Sabado</h2>
+                        <img src="../imagenes/reserva-intro.jpg" alt="reservación" class="imgRec V-PC">
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="mt-lg-5 pt-lg-5 pt-3">
+                        <h4>2am</h4>
+                            <p>Separa la mesa de tu noche. Escríbenos por whatsapp para reservar una mesa.</p>
+                        </div>
+                        <button type="button" class="btn-one" href="../subpaginas/reserva.html">Reserva</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <button class="carousel-control-prev arrow-btn-left" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button> -->
+        <button class="carousel-control-next arrow-btn-right" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon arrow-right" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
 
-    <article id="card-slider">
+    <!-- <article id="card-slider">
         <div class="cs-guia">
             <h6>Reserva</h6>
             <span></span>
@@ -76,7 +194,7 @@
             <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
         </div>
         
-    </article>
+    </article> -->
 
 
 
@@ -108,26 +226,32 @@
     </article>
 
 
-    <footer>
-        <a href="/Index.html"><img src="./imagenes/" alt="LOGO" class="i-footer"></a>
-        <ul class="i-footer">
-            <li>
-                <a href="https://web.whatsapp.com/">+51 123 456 789</a>
-            </li>
-            <li>
-                <a href="https://www.google.com/intl/es-419/gmail/about/">info@marca.com</a>
-            </li>
-            <li>
-                <a href="https://www.google.com.pe/maps">Ubicación</a>
-            </li>
-        </ul>
-        <ul class="i-footer">
-            <li class="i-f"><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></li>
-            <li class="i-f"><a href="https://www.instagram.com/tony.cff/"><i class="fa-brands fa-instagram"></i></a></li>
-            <li class="i-f"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-            <li class="i-f"><a href="https://www.google.com.pe/maps"><i class="fa-solid fa-location-dot"></i></a></li>
-        </ul>
-        <a href="https://www.linkedin.com/in/cumpab/" class="i-footer">Design and developer by <strong>Anthony Cumpa</strong></a>
+    <footer class="container-fluid mt-5">
+        <div class="container px-5 btw">
+            <div class="row g-3 align-items-center">
+                <div class="col-lg-2 d-lg-block d-md-none d-sm-none">
+                    <a href="Index.html">
+                        <img src="../imagenes/Logo-bebold-sm2.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="https://www.google.com/maps">Saenz Peña 605, Chiclayo, Peru</a> <br>
+                    <a href="https://web.whatsapp.com/"><span></span>+51 991 555 775</a> <br>
+                    <a href="https://www.google.com/intl/es-419/gmail/about/">info@marca.com</a>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="i-footer">
+                        <li class="i-f"><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li class="i-f"><a href="https://www.instagram.com/tony.cff/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="i-f"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="i-f"><a href="https://www.google.com.pe/maps"><i class="fa-solid fa-location-dot"></i></a></li>
+                    </ul>
+                    <a href="https://www.linkedin.com/in/cumpab/" class="i-footer">Design and developer by <strong>Anthony Cumpa</strong></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

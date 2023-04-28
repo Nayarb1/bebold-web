@@ -67,9 +67,9 @@
 
 
 
-
 .arrow-btn-right{
     align-items: end;
+    right: 50px;
 }
 .arrow-btn-left{
     right: 100px;
@@ -79,7 +79,7 @@
     right: 100px;
 }
 .arrow-right{
-    background: url(/imagenes/arrow-right-solid2.png);
+    background: url(../imagenes/arrow-right-solid2.png);
     background-size: 14px;
     background-repeat: no-repeat;
     background-position: center;
@@ -97,16 +97,15 @@
 }
 
 #carouselExampleDark>.carousel-indicators{
-    
 }
 #carouselExampleDark>.carousel-indicators > .active{
-    width: 100px;
+    width: 40px;
 }
 #carouselExampleDark>div>button{
     background-color: #7b30dd;
     border: 0;
     border-radius: 50px;
-    width: 30px;
+    width: 10px;
     height: 1px;
 }
 
