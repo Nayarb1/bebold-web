@@ -46,88 +46,57 @@
 
 
 
-    <!---------------------------- SLIDER PRINCIPAL - BANNER -->
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators c-i-me">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!---------------------------- BANNER -->
+    <div class="container-fluid p-0 position-relative reserva-img">
+        <div class="position-absolute mb-5 px-5 pb-5 mx-5">
+            <h2>Separa tu mesa</h2>
+            <p>Reserva tu mesa y horario con nosotros a traves de Whatsapp.</p>
+            <button type="button" class="btn-one" href="../subpaginas/reserva.html">Reserva</button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../imagenes/banner1.jpg" class="imgslider d-block w-100" alt="...">
-            <div class="carousel-degradado"></div>
-            <div class="carousel-caption d-none d-md-block">
-                <h2>Noche de zumitos</h2>
-                <p>Pasa una noche agradable, entre copas, amigos y musica.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../imagenes/banda2.jpg" class="imgslider d-block w-100" alt="...">
-            <div class="carousel-degradado"></div>
-            <div class="carousel-caption d-none d-md-block">
-                <h2>Noche de zumitos</h2>
-                <p>Pasa una noche agradable, entre copas y musica.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../imagenes/banda3.jpg" class="imgslider d-block w-100" alt="...">
-            <div class="carousel-degradado"></div>
-            <div class="carousel-caption d-none d-md-block">
-                <h2>Noche de zumitos</h2>
-                <p>Pasa una noche agradable, entre copas y musica.</p>
-            </div>
-          </div>
+        <div class="carousel-degradado"></div>
+    </div>
+
+
+<!-- -------------------------------------- MAP -->
+    <div class="container p-5">
+        <h2 class="px-5">Ubicacion</h2>
+        <p class="px-5">Saenz Peña 605, Chiclayo, Peru</p> <br>
+        <div class="container px-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d454.1432481254498!2d-79.83663788182287!3d-6.773084110738765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef299755591f%3A0xa3e106d40de8f95c!2sAv.%20S%C3%A1enz%20Pe%C3%B1a%20605%2C%20Chiclayo%2014001!5e0!3m2!1ses-419!2spe!4v1682725639344!5m2!1ses-419!2spe" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-
-
-    <article id="map">
-        <h2>Ubicacion</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> <br>
-        <div class="mapa"></div>
-    </article>
+    </div>
 
 
 
 
-
-    <article id="contact">
-        <div class="img-contact"></div>
-        <div class="content-contact">
-            <h2>Contactanos</h2>
-            <form action="submit">
-
-                <ul>
-                    <li>
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" placeholder="Escribe tu nombre">
-                    </li> <br>
-                    <li>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="example@gmail.com" required>
-                    </li> <br>
-                    <li>
-                        <label for="message">Mensaje</label>
-                        <input type="text" name="message" placeholder="Escribe tu mensaje">
-                    </li> <br>
-                    <li>
-                        <button type="submit" class="button">Enviar</button>
-                    </li>
-                </ul>
-
-            </form>
+<!-- ------------------------------------------- CONTACT -->
+    <div class="container p-5">
+        <div class="row px-5">
+            <div class="img-contact col-lg-4 d-none d-lg-block"></div>
+            <div class="col-lg-1 d-none d-lg-block"></div>
+            <div class="content-contact col-lg-7">
+                <div class="">
+                    <h2 class="mx-sm-0 mx-md-5 px-sm-0 px-md-5 t-24 text-center mb-4">Contacto</h2>
+                    <form class="mx-sm-0 mx-md-5 px-sm-0 px-md-5" netlify name="contacto">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" placeholder="Leave a comment here" id="floatingText" name="nombre"></input>
+                            <label for="floating">Nombre</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" required>
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="mensaje"></textarea>
+                            <label for="floatingTextarea2">Mensaje</label>
+                        </div>
+                        <button type="submit" class="btn-one mt-5">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </article>
+        
+    </div>
 
 
     <footer class="container-fluid mt-5">

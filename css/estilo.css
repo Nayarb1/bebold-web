@@ -60,7 +60,7 @@ input{
     border-top-left-radius: 25px;
 }
 body{
-    background: url(/imagenes/circle-degrad2.png);
+    background: url(../imagenes/circle-degrad2.png);
     background-position: -200px;
     filter: invert(150px);
 }
@@ -78,7 +78,7 @@ header{
     box-shadow: 0 -10px 25px #242424;
 }
 nav{
-    margin: 0 100px 0 100px;
+    margin: 0 5% 0 5%;
 }
 /* nav{
     width: 1040px;
@@ -373,41 +373,54 @@ article{
     height: 350px;
     background: linear-gradient(to right, #242424 30%, transparent);
 }
-.bd1>div>h4{
-    color: #EDEDED;
-}
     .bd1{
         width: 100%;
         height: 350px;
         background: url(../imagenes/banda1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 120px -250px;
+        background-position: 0px -250px;
+        color: #EDEDED;
     }
     .bd2{
+        width: 100%;
+        height: 350px;
         background: url(../imagenes/banda2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 120px -250px;
+        color: #EDEDED;
     }
     .bd3{
+        width: 100%;
+        height: 350px;
         background: url(../imagenes/banda3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 120px -250px;
+        color: #EDEDED;
     }
+.content-bandai{
+    bottom: 0;
+}
 
 
 
 
-    .v-caja{
-        display: inline-block;
-        width: 300px;
-        border: 1px solid #242424;
-        border-radius: 100px 0 100px 0;
-        padding: 20px;
-        margin: 10px;
-    }
+.reserva-img>div:nth-child(1){
+    bottom: 0;
+    color: #EDEDED;
+    z-index: 1;
+}
+.reserva-img{
+    width: 100%;
+    height: 450px;
+    background: url(../imagenes/baner-reserva.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;        background-position: 0 35%;
+}
+
+
 
 
 
@@ -423,14 +436,11 @@ article{
 
 
 .img-contact{
-    width: 50%;
     height: 400px;
     background: url(/imagenes/licor2-intro.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: inline-block;
-    margin-right: 50px;
 }
 .content-contact{
     display: inline-block;
