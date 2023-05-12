@@ -1,0 +1,318 @@
+/*$fuentePrincipal: 36px;
+$fuente2: 24px;
+$fuente3: 20px 900;
+$fuente4: 16px 700;
+$fuente6: 14px 400;
+$fuenteParrafo: 14px;*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 500ms ease-in-out;
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color: rgba(123, 48, 221, 0.5411764706);
+}
+a:hover {
+  color: #810AFF;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #242424;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #242424;
+}
+
+p {
+  font-size: 14px;
+  color: #838383;
+}
+
+label {
+  font-size: 14px;
+}
+
+input {
+  min-width: 100px;
+  padding: 10px 16px;
+  border: 0.5px solid;
+  border-radius: 100px 0 0 0;
+}
+
+body {
+  background: url(../imagenes/circle-degrado.png);
+  background-position: -200px;
+  filter: invert(150px);
+}
+
+.btn-one {
+  padding: 8px 32px;
+  border: 0;
+  border-radius: 50px 5px 50px 5px;
+  color: #EDEDED;
+  background-color: #7b30dd;
+  transition: all 0.15s ease-in-out;
+}
+.btn-one:hover {
+  background: #810AFF;
+}
+
+.container-adside {
+  position: relative;
+}
+.container-adside .adside {
+  position: sticky;
+  top: 100px;
+}
+.container-adside .adside span {
+  display: block;
+  width: 100%;
+  height: 0.5px;
+  margin: 5px 0;
+  background-color: #242424;
+}
+
+header {
+  display: inline-block;
+  background: linear-gradient(rgba(244, 118, 255, 0.0980392157) 5%, rgba(129, 10, 255, 0.1725490196));
+  backdrop-filter: blur(30px);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 -10px 25px #242424;
+}
+header nav {
+  margin: 0 5% 0 5%;
+}
+header nav div #navbarNav {
+  justify-content: end;
+}
+header nav div #navbarNav .navbar-nav {
+  align-items: center;
+  gap: 40px;
+}
+header nav div #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #EDEDED;
+}
+header nav div #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #7b30dd;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 200px;
+  box-sizing: border-box;
+  background-color: rgba(244, 118, 255, 0.0666666667);
+}
+footer .i-f {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.imgslider {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#carouselExampleIndicators .carousel-indicators .active {
+  width: 30px;
+}
+#carouselExampleIndicators .carousel-indicators button {
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #F476FF;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item .carousel-degradado {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, #242424);
+  position: absolute;
+  top: 0;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption {
+  text-align: start;
+}
+
+.img-intro {
+  width: 550px;
+  height: 385px;
+  background: url(../imagenes/fotos-intro.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: -120px;
+  right: 0;
+  /* opacity: 8%; */
+}
+
+#carouselExampleDark .carousel-indicators .active {
+  width: 30px;
+}
+#carouselExampleDark .carousel-indicators button {
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #F476FF;
+}
+#carouselExampleDark .carousel-control-prev {
+  right: 100px;
+  right: 100px;
+  align-items: end;
+}
+#carouselExampleDark .arrow-btn-right {
+  align-items: end;
+  right: 50px;
+  background: url(../imagenes/arrow-right-solid2.png);
+  filter: invert(0);
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 8px 32px;
+  border: 1px solid #9747FF;
+  box-sizing: border-box;
+  border-radius: 50px;
+  transition: all 0.15s ease-in-out;
+}
+#carouselExampleDark .arrow-btn-right:hover {
+  background-color: rgba(244, 118, 255, 0.1882352941);
+}
+
+.bd1 {
+  width: 100%;
+  height: 350px;
+  background: url(../imagenes/banda1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -250px;
+  color: #EDEDED;
+}
+.bd1 .content-bandai {
+  bottom: 0;
+}
+.bd1 .aa {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(to right, #242424 30%, transparent);
+}
+
+.bd2 {
+  width: 100%;
+  height: 350px;
+  background: url(../imagenes/banda2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 120px -250px;
+  color: #EDEDED;
+}
+.bd2 .content-bandai {
+  bottom: 0;
+}
+.bd2 .aa {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(to right, #242424 30%, transparent);
+}
+
+.bd3 {
+  width: 100%;
+  height: 350px;
+  background: url(../imagenes/banda3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 120px -250px;
+  color: #EDEDED;
+}
+.bd3 .content-bandai {
+  bottom: 0;
+}
+.bd3 .aa {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(to right, #242424 30%, transparent);
+}
+
+.reserva-img {
+  width: 100%;
+  height: 450px;
+  background: url(../imagenes/baner-reserva.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 35%;
+}
+.reserva-img div:nth-child(1) {
+  bottom: 0;
+  color: #EDEDED;
+  z-index: 1;
+}
+
+.img-contact {
+  height: 400px;
+  background: url(../imagenes/licor2-intro.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content-contact {
+  display: inline-block;
+}
+
+.imgRec {
+  width: 100%;
+  height: 250px;
+  border-radius: 5PX 100px 5px 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  background-color: transparent;
+  border-radius: 100px 5px 5px 5px;
+  border: 1px solid #b39dcf;
+}
+.card .img-card {
+  height: 18em;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100px 0 0 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

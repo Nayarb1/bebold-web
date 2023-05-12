@@ -1,0 +1,42 @@
+header{
+    display: inline-block;
+    background: linear-gradient(#f476ff19 5%, #810AFF2c);
+    backdrop-filter: blur(30px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 -10px 25px $colorBlack;
+    nav{
+        margin: 0 5% 0 5%;
+        div{
+            #navbarNav{
+                justify-content: end;
+                .navbar-nav{
+                    align-items: center;
+                    gap: 40px;
+                    .nav-item{
+                        .nav-link{
+                            color: $colorFondo;
+                            &:hover{
+                                color: $colorPrincipal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 20px 200px;
+    box-sizing: border-box;
+    background-color: #F476FF11;
+    .i-f{
+        display: inline-block;
+        margin: 0 5px;
+    }
+}

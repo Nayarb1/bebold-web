@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 500ms ease-in-out;
+}
+
+a{
+    font-weight: 400;
+    text-decoration: none;
+    color: $colorEtiqueta;
+    &:hover{
+        color: $colorAcento;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 900;
+    color: $colorBlack;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+h6{
+    font-size: 14px;
+    font-weight: 400;
+    color: $colorBlack;
+}
+
+p{
+    font-size: 14px;
+    color: $colorTextoBody;
+}
+
+label{
+    font-size: 14px;
+}
+
+input{
+    min-width: 100px;
+    padding: 10px 16px;
+    border: .5px solid ;
+    border-radius: $borderIzquierdo;
+}
+
+body{
+    background: url(../imagenes/circle-degrado.png);
+    background-position: -200px;
+    filter: invert(150px);
+}
+
+//BOOTSTRAPS
+.btn-one{
+    padding: 8px 32px;
+    border: 0;
+    border-radius: 50px 5px 50px 5px;
+    color: $colorFondo;
+    background-color: $colorPrincipal;
+    transition: all .15s ease-in-out;
+        &:hover{
+            background: $colorAcento;
+        }
+}
+
+
+.container-adside{
+    position: relative;
+    .adside{
+        position: sticky;
+        top: 100px;
+        span{
+            display: block;
+            width: 100%;
+            height: 0.5px;
+            margin: 5px 0;
+            background-color: $colorBlack;
+        }
+    }
+}
