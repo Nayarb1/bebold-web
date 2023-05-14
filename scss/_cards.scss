@@ -1,7 +1,7 @@
 .imgRec{
     width: 100%;
     height: 250px;
-    border-radius: 5PX 100px 5px 100px;
+    border-radius: 80px 5px 5px 5px;
     object-fit: cover;
     object-position: center;
 }
@@ -16,5 +16,11 @@
         object-fit: cover;
         object-position: center;
         border-radius: 100px 0 0 0;
+    }
+}
+
+#valoraciones{
+    .card{
+        padding: 40px 20px;
     }
 }

@@ -8,7 +8,6 @@ $fuenteParrafo: 14px;*/
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  transition: all 500ms ease-in-out;
 }
 
 a {
@@ -79,7 +78,7 @@ body {
 .btn-one {
   padding: 8px 32px;
   border: 0;
-  border-radius: 50px 5px 50px 5px;
+  border-radius: 5px;
   color: #EDEDED;
   background-color: #7b30dd;
   transition: all 0.15s ease-in-out;
@@ -106,13 +105,13 @@ body {
 header {
   display: inline-block;
   background: linear-gradient(rgba(244, 118, 255, 0.0980392157) 5%, rgba(129, 10, 255, 0.1725490196));
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px) invert(8%) contrast(0.4) brightness(2);
   width: 100%;
   position: fixed;
   top: 0;
   padding: 10px 0;
   z-index: 1000;
-  box-shadow: 0 -10px 25px #242424;
+  box-shadow: 0 -20px 40px #242424;
 }
 header nav {
   margin: 0 5% 0 5%;
@@ -125,10 +124,15 @@ header nav div #navbarNav .navbar-nav {
   gap: 40px;
 }
 header nav div #navbarNav .navbar-nav .nav-item .nav-link {
-  color: #EDEDED;
+  color: #242424;
+  font-weight: 400;
+  filter: opacity(0.4);
+  transition: all 200ms ease-in-out;
 }
 header nav div #navbarNav .navbar-nav .nav-item .nav-link:hover {
-  color: #7b30dd;
+  color: #810AFF;
+  filter: opacity(1);
+  border-bottom: 2px solid #810AFF;
 }
 
 footer {
@@ -153,8 +157,8 @@ footer .i-f {
   width: 30px;
 }
 #carouselExampleIndicators .carousel-indicators button {
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   border: 0;
   border-radius: 10px;
   background-color: #F476FF;
@@ -178,7 +182,7 @@ footer .i-f {
   background-size: cover;
   position: absolute;
   top: -120px;
-  right: 0;
+  right: -20px;
   /* opacity: 8%; */
 }
 
@@ -186,8 +190,8 @@ footer .i-f {
   width: 30px;
 }
 #carouselExampleDark .carousel-indicators button {
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   border: 0;
   border-radius: 10px;
   background-color: #F476FF;
@@ -298,7 +302,7 @@ footer .i-f {
 .imgRec {
   width: 100%;
   height: 250px;
-  border-radius: 5PX 100px 5px 100px;
+  border-radius: 80px 5px 5px 5px;
   object-fit: cover;
   object-position: center;
 }
@@ -313,6 +317,138 @@ footer .i-f {
   object-fit: cover;
   object-position: center;
   border-radius: 100px 0 0 0;
+}
+
+#valoraciones .card {
+  padding: 40px 20px;
+}
+
+@media screen and (max-width: 575px) {
+  .bd1 {
+    background-position: 0 0px;
+  }
+  .bd1 .content-bandai {
+    top: 60px;
+  }
+  .bd2 {
+    background-position: 120px 0;
+  }
+  .bd2 .content-bandai {
+    top: 60px;
+  }
+  .bd3 {
+    background-position: 120px 0;
+  }
+  .bd3 .content-bandai {
+    top: 40px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .bd1 {
+    background-position: 0 -40px;
+  }
+  .bd1 .content-bandai {
+    bottom: -50px;
+  }
+  .bd2 {
+    background-position: 120px 0;
+  }
+  .bd2 .content-bandai {
+    bottom: -50px;
+  }
+  .bd3 {
+    background-position: 120px -50px;
+  }
+  .bd3 .content-bandai {
+    bottom: -50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .img-intro {
+    width: 420px;
+    height: 300px;
+    top: -60px;
+    background-repeat: no-repeat;
+  }
+  .card .img-card {
+    height: 10em;
+  }
+  .bd1 {
+    background-position: 0 -100px;
+  }
+  .bd1 .content-bandai {
+    bottom: -10px;
+  }
+  .bd2 {
+    background-position: 120px -80px;
+  }
+  .bd2 .content-bandai {
+    bottom: -10px;
+  }
+  .bd3 {
+    background-position: 120px -170px;
+  }
+  .bd3 .content-bandai {
+    bottom: -10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .img-intro {
+    width: 500px;
+    height: 350px;
+    top: -85px;
+    background-repeat: no-repeat;
+  }
+  .card .img-card {
+    height: 14em;
+  }
+  .bd1 {
+    background-position: 0 -200px;
+  }
+  .bd1 .content-bandai {
+    bottom: -50px;
+  }
+  .bd2 {
+    background-position: 120px -80px;
+  }
+  .bd2 .content-bandai {
+    bottom: -50px;
+  }
+  .bd3 {
+    background-position: 120px -180px;
+  }
+  .bd3 .content-bandai {
+    bottom: -50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .img-intro {
+    width: 600px;
+    height: 420px;
+    top: -170px;
+    background-repeat: no-repeat;
+  }
+  .card .img-card {
+    height: 18em;
+  }
+  .bd1 {
+    background-position: 0 -280px;
+  }
+  .bd1 .content-bandai {
+    bottom: -15px;
+  }
+  .bd2 {
+    background-position: 120px -180px;
+  }
+  .bd2 .content-bandai {
+    bottom: -15px;
+  }
+  .bd3 {
+    background-position: 120px -280px;
+  }
+  .bd3 .content-bandai {
+    bottom: -15px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

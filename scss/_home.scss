@@ -11,8 +11,8 @@
             width: 30px;
         }
         button{
-            width: 6px;
-            height: 6px;
+            width: 4px;
+            height: 4px;
             border: 0;
             border-radius: 10px;
             background-color: $colorSecundario;
@@ -43,7 +43,7 @@
     background-size: cover;
     position: absolute;
     top: -120px;
-    right: 0;
+    right: -20px;
     /* opacity: 8%; */
 }
 
@@ -53,8 +53,8 @@
             width: 30px;
         }
         button{
-            width: 6px;
-            height: 6px;
+            width: 4px;
+            height: 4px;
             border: 0;
             border-radius: 10px;
             background-color: $colorSecundario;

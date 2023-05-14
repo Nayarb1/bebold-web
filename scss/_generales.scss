@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: all 500ms ease-in-out;
+    //transition: all 500ms ease-in-out;
 }
 
 a{
@@ -74,7 +74,7 @@ body{
 .btn-one{
     padding: 8px 32px;
     border: 0;
-    border-radius: 50px 5px 50px 5px;
+    border-radius: 5px;
     color: $colorFondo;
     background-color: $colorPrincipal;
     transition: all .15s ease-in-out;

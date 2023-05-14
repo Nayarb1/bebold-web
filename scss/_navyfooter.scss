@@ -1,13 +1,13 @@
 header{
     display: inline-block;
     background: linear-gradient(#f476ff19 5%, #810AFF2c);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px) invert(8%) contrast(0.4) brightness(2);
     width: 100%;
     position: fixed;
     top: 0;
     padding: 10px 0;
     z-index: 1000;
-    box-shadow: 0 -10px 25px $colorBlack;
+    box-shadow: 0 -20px 40px $colorBlack;
     nav{
         margin: 0 5% 0 5%;
         div{
@@ -18,9 +18,14 @@ header{
                     gap: 40px;
                     .nav-item{
                         .nav-link{
-                            color: $colorFondo;
+                            color: $colorBlack;
+                            font-weight: 400;
+                            filter: opacity(.4);
+                            transition: all 200ms ease-in-out;
                             &:hover{
-                                color: $colorPrincipal;
+                                color: $colorAcento;
+                                filter: opacity(1);
+                                border-bottom: 2px solid $colorAcento;
                             }
                         }
                     }

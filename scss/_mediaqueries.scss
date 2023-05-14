@@ -1,0 +1,142 @@
+//PANTALLA SO SMALL
+@media screen and (max-width: 575px) {
+    .bd1{
+        background-position: 0 0px;
+        .content-bandai{
+            top: 60px;
+        }
+    }
+    .bd2{
+        background-position: 120px 0;
+        .content-bandai{
+            top: 60px;
+        }
+    }
+    .bd3{
+        background-position: 120px 0;
+        .content-bandai{
+            top: 40px;
+        }
+    }
+}
+
+//PANTALLA SMALL
+@media screen and (min-width: 576px) {
+    .bd1{
+        background-position: 0 -40px;
+        .content-bandai{
+            bottom: -50px;
+        }
+    }
+    .bd2{
+        background-position: 120px 0;
+        .content-bandai{
+            bottom: -50px;
+        }
+    }
+    .bd3{
+        background-position: 120px -50px;
+        .content-bandai{
+            bottom: -50px;
+        }
+    }
+}
+
+//PANTALLA MEDIA
+@media screen and (min-width: 768px) {
+    .img-intro{
+        width: 420px;
+        height: 300px;
+        top: -60px;
+        background-repeat: no-repeat;
+    }
+    .card{
+        .img-card{
+            height: 10em;
+        }
+    }
+    .bd1{
+        background-position: 0 -100px;
+        .content-bandai{
+            bottom: -10px;
+        }
+    }
+    .bd2{
+        background-position: 120px -80px;
+        .content-bandai{
+            bottom: -10px;
+        }
+    }
+    .bd3{
+        background-position: 120px -170px;
+        .content-bandai{
+            bottom: -10px;
+        }
+    }
+}
+
+//PANTALLA LARGE
+@media screen and (min-width: 992px) {
+    .img-intro{
+        width: 500px;
+        height: 350px;
+        top: -85px;
+        background-repeat: no-repeat;
+    }
+    .card{
+        .img-card{
+            height: 14em;
+        }
+    }
+    .bd1{
+        background-position: 0 -200px;
+        .content-bandai{
+            bottom: -50px;
+        }
+    }
+    .bd2{
+        background-position: 120px -80px;
+        .content-bandai{
+            bottom: -50px;
+        }
+    }
+    .bd3{
+        background-position: 120px -180px;
+        .content-bandai{
+            bottom: -50px;
+        }
+    }
+}
+
+//PANTALLA EXTRA-lARGE
+@media screen and (min-width: 1200px) {
+    .img-intro{
+        width: 600px;
+        height: 420px;
+        top: -170px;
+        background-repeat: no-repeat;
+    }
+    .card{
+        .img-card{
+            height: 18em;
+        }
+    }
+    .bd1{
+        background-position: 0 -280px;
+        .content-bandai{
+            bottom: -15px;
+        }
+    }
+    .bd2{
+        background-position: 120px -180px;
+        .content-bandai{
+            bottom: -15px;
+        }
+    }
+    .bd3{
+        background-position: 120px -280px;
+        .content-bandai{
+            bottom: -15px;
+        }
+    }
+}
