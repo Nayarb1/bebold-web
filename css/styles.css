@@ -1,9 +1,3 @@
-/*$fuentePrincipal: 36px;
-$fuente2: 24px;
-$fuente3: 20px 900;
-$fuente4: 16px 700;
-$fuente6: 14px 400;
-$fuenteParrafo: 14px;*/
 * {
   margin: 0;
   padding: 0;
@@ -62,17 +56,27 @@ label {
   font-size: 14px;
 }
 
-input {
-  min-width: 100px;
-  padding: 10px 16px;
-  border: 0.5px solid;
-  border-radius: 100px 0 0 0;
-}
-
+/*input{
+    min-width: 100px;
+    padding: 10px 16px;
+    border: .5px solid ;
+}*/
 body {
   background: url(../imagenes/circle-degrado.png);
   background-position: -200px;
   filter: invert(150px);
+  scroll-behavior: smooth;
+}
+
+header nav div .navbar-toggler {
+  border: 1px solid #810AFF;
+  border-radius: 5px;
+}
+header nav div .navbar-toggler span {
+  filter: invert(10%);
+}
+header nav div .navbar-toggler:focus {
+  box-shadow: 0 0 0 5px rgba(123, 48, 221, 0.5647058824);
 }
 
 .btn-one {
@@ -141,9 +145,13 @@ footer {
   box-sizing: border-box;
   background-color: rgba(244, 118, 255, 0.0666666667);
 }
-footer .i-f {
-  display: inline-block;
-  margin: 0 5px;
+footer .i-footer {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+footer .i-footer li a i {
+  font-size: 1.2rem;
 }
 
 .imgslider {
@@ -162,6 +170,7 @@ footer .i-f {
   border: 0;
   border-radius: 10px;
   background-color: #F476FF;
+  transition: all 0.6s ease;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item .carousel-degradado {
   width: 100%;
@@ -195,6 +204,16 @@ footer .i-f {
   border: 0;
   border-radius: 10px;
   background-color: #F476FF;
+  transition: all 0.6s ease;
+}
+#carouselExampleDark .indicadores2 {
+  right: 15%;
+  bottom: 0;
+  left: auto;
+}
+#carouselExampleDark .carousel-inner .carousel-item {
+  animation-delay: 5s;
+  transition: all 0.6s ease;
 }
 #carouselExampleDark .carousel-control-prev {
   right: 100px;
@@ -203,7 +222,9 @@ footer .i-f {
 }
 #carouselExampleDark .arrow-btn-right {
   align-items: end;
-  right: 50px;
+  right: 100px;
+  top: 0;
+  bottom: 10px;
   background: url(../imagenes/arrow-right-solid2.png);
   filter: invert(0);
   background-size: 14px;
@@ -220,12 +241,14 @@ footer .i-f {
 }
 
 .bd1 {
-  width: 100%;
+  width: 92%;
   height: 350px;
-  background: url(../imagenes/banda1.jpg);
+  background: url(../imagenes/Banda-01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -250px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
   color: #EDEDED;
 }
 .bd1 .content-bandai {
@@ -238,9 +261,9 @@ footer .i-f {
 }
 
 .bd2 {
-  width: 100%;
+  width: 92%;
   height: 350px;
-  background: url(../imagenes/banda2.jpg);
+  background: url(../imagenes/Banda-02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 120px -250px;
@@ -256,12 +279,14 @@ footer .i-f {
 }
 
 .bd3 {
-  width: 100%;
+  width: 92%;
   height: 350px;
-  background: url(../imagenes/banda3.jpg);
+  background: url(../imagenes/Banda-03.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 120px -250px;
+  background-position: 120px 0;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
   color: #EDEDED;
 }
 .bd3 .content-bandai {
@@ -276,7 +301,7 @@ footer .i-f {
 .reserva-img {
   width: 100%;
   height: 450px;
-  background: url(../imagenes/baner-reserva.jpg);
+  background: url(../imagenes/E-Reserva.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 35%;
@@ -289,34 +314,36 @@ footer .i-f {
 
 .img-contact {
   height: 400px;
-  background: url(../imagenes/licor2-intro.jpg);
+  border-radius: 5px;
+  background: url(../imagenes/E-Contacto.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0 0 150px -20px rgba(123, 48, 221, 0.5411764706);
 }
 
-.content-contact {
-  display: inline-block;
+.content-contact div form button {
+  width: 100%;
 }
 
 .imgRec {
   width: 100%;
   height: 250px;
-  border-radius: 80px 5px 5px 5px;
+  border-radius: 70px 5px 5px 5px;
   object-fit: cover;
   object-position: center;
 }
 
 .card {
   background-color: transparent;
-  border-radius: 100px 5px 5px 5px;
+  border-radius: 70px 5px 5px 5px;
   border: 1px solid #b39dcf;
 }
 .card .img-card {
   height: 18em;
   object-fit: cover;
   object-position: center;
-  border-radius: 100px 0 0 0;
+  border-radius: 70px 0 0 0;
 }
 
 #valoraciones .card {
@@ -337,15 +364,31 @@ footer .i-f {
     top: 60px;
   }
   .bd3 {
-    background-position: 120px 0;
+    background-position: 70px 0;
   }
   .bd3 .content-bandai {
     top: 40px;
   }
+  #carouselExampleDark .indicadores2 {
+    right: 0;
+    left: 0;
+    bottom: -15%;
+  }
+  #carouselExampleDark .arrow-btn-right {
+    width: max-content;
+    right: 24px;
+    top: 105%;
+    bottom: -15%;
+    background-size: 14px;
+    padding: 4px 48px;
+  }
+  .btn-one {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 576px) {
   .bd1 {
-    background-position: 0 -40px;
+    background-position: 0 0px;
   }
   .bd1 .content-bandai {
     bottom: -50px;
@@ -357,10 +400,26 @@ footer .i-f {
     bottom: -50px;
   }
   .bd3 {
-    background-position: 120px -50px;
+    background-position: 70px 0;
   }
   .bd3 .content-bandai {
     bottom: -50px;
+  }
+  #carouselExampleDark .indicadores2 {
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  #carouselExampleDark .arrow-btn-right {
+    width: max-content;
+    right: 24px;
+    top: 90%;
+    bottom: 0;
+    background-size: 14px;
+    padding: 4px 48px;
+  }
+  .btn-one {
+    width: max-content;
   }
 }
 @media screen and (min-width: 768px) {
@@ -386,10 +445,18 @@ footer .i-f {
     bottom: -10px;
   }
   .bd3 {
-    background-position: 120px -170px;
+    background-position: 120px -140px;
   }
   .bd3 .content-bandai {
     bottom: -10px;
+  }
+  #carouselExampleDark .arrow-btn-right {
+    width: max-content;
+    right: 57px;
+    top: 90%;
+    bottom: 0;
+    background-size: 14px;
+    padding: 4px 48px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -420,6 +487,19 @@ footer .i-f {
   .bd3 .content-bandai {
     bottom: -50px;
   }
+  #carouselExampleDark .indicadores2 {
+    right: 27.8%;
+    left: auto;
+    bottom: 0;
+  }
+  #carouselExampleDark .arrow-btn-right {
+    width: max-content;
+    right: 10%;
+    top: 87%;
+    bottom: 0;
+    background-size: 14px;
+    padding: 4px 48px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .img-intro {
@@ -448,6 +528,18 @@ footer .i-f {
   }
   .bd3 .content-bandai {
     bottom: -15px;
+  }
+  #carouselExampleDark .indicadores2 {
+    right: 5%;
+    bottom: 0;
+  }
+  #carouselExampleDark .arrow-btn-right {
+    width: max-content;
+    right: 8%;
+    top: 87%;
+    bottom: 0;
+    background-size: 14px;
+    padding: 4px 48px;
   }
 }
 

@@ -13,17 +13,35 @@
         }
     }
     .bd3{
-        background-position: 120px 0;
+        background-position: 70px 0;
         .content-bandai{
             top: 40px;
         }
+    }
+    #carouselExampleDark{
+        .indicadores2{
+            right: 0;
+            left: 0;
+            bottom: -15%;
+        }
+        .arrow-btn-right{
+            width: max-content;
+            right: 24px;
+            top: 105%;
+            bottom: -15%;
+            background-size: 14px;
+            padding: 4px 48px;
+        }
+    }
+    .btn-one{
+        width: 100%;
     }
 }
 
 //PANTALLA SMALL
 @media screen and (min-width: 576px) {
     .bd1{
-        background-position: 0 -40px;
+        background-position: 0 0px;
         .content-bandai{
             bottom: -50px;
         }
@@ -35,10 +53,28 @@
         }
     }
     .bd3{
-        background-position: 120px -50px;
+        background-position: 70px 0;
         .content-bandai{
             bottom: -50px;
         }
+    }
+    #carouselExampleDark{
+        .indicadores2{
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+        .arrow-btn-right{
+            width: max-content;
+            right: 24px;
+            top: 90%;
+            bottom: 0;
+            background-size: 14px;
+            padding: 4px 48px;
+        }
+    }
+    .btn-one{
+        width: max-content ;
     }
 }
 
@@ -68,9 +104,19 @@
         }
     }
     .bd3{
-        background-position: 120px -170px;
+        background-position: 120px -140px;
         .content-bandai{
             bottom: -10px;
+        }
+    }
+    #carouselExampleDark{
+        .arrow-btn-right{
+            width: max-content;
+            right: 57px;
+            top: 90%;
+            bottom: 0;
+            background-size: 14px;
+            padding: 4px 48px;
         }
     }
 }
@@ -106,6 +152,21 @@
             bottom: -50px;
         }
     }
+    #carouselExampleDark{
+        .indicadores2{
+            right: 27.8%;
+            left: auto;
+            bottom: 0;
+        }
+        .arrow-btn-right{
+            width: max-content;
+            right: 10%;
+            top: 87%;
+            bottom: 0;
+            background-size: 14px;
+            padding: 4px 48px;
+        }
+    }
 }
 
 //PANTALLA EXTRA-lARGE
@@ -137,6 +198,20 @@
         background-position: 120px -280px;
         .content-bandai{
             bottom: -15px;
+        }
+    }
+    #carouselExampleDark{
+        .indicadores2{
+            right: 5%;
+            bottom: 0;
+        }
+        .arrow-btn-right{
+            width: max-content;
+            right: 8%;
+            top: 87%;
+            bottom: 0;
+            background-size: 14px;
+            padding: 4px 48px;
         }
     }
 }

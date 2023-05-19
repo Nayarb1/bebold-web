@@ -1,10 +1,12 @@
 .bd1{
-    width: 100%;
+    width: 92%;
     height: 350px;
-    background: url(../imagenes/banda1.jpg);
+    background: url(../imagenes/Banda-01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px -250px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
     color: #EDEDED;
     .content-bandai{
         bottom: 0;
@@ -17,9 +19,9 @@
 }
 
 .bd2{
-    width: 100%;
+    width: 92%;
     height: 350px;
-    background: url(../imagenes/banda2.jpg);
+    background: url(../imagenes/Banda-02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 120px -250px;
@@ -35,12 +37,14 @@
 }
 
 .bd3{
-    width: 100%;
+    width: 92%;
     height: 350px;
-    background: url(../imagenes/banda3.jpg);
+    background: url(../imagenes/Banda-03.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 120px -250px;
+    background-position: 120px 0;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
     color: #EDEDED;
     .content-bandai{
         bottom: 0;

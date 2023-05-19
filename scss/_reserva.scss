@@ -1,7 +1,7 @@
 .reserva-img{
     width: 100%;
     height: 450px;
-    background: url(../imagenes/baner-reserva.jpg);
+    background: url(../imagenes/E-Reserva.jpg);
     background-repeat: no-repeat;
     background-size: cover;        
     background-position: 0 35%;
@@ -14,12 +14,20 @@
 
 .img-contact{
     height: 400px;
-    background: url(../imagenes/licor2-intro.jpg);
+    border-radius: 5px;
+    background: url(../imagenes/E-Contacto.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    box-shadow: 0 0 150px -20px $colorEtiqueta;
 }
 
 .content-contact{
-    display: inline-block;
+    div{
+        form{
+            button{
+                width: 100%;
+            }
+        }
+    }
 }

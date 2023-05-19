@@ -57,18 +57,36 @@ label{
     font-size: 14px;
 }
 
-input{
+/*input{
     min-width: 100px;
     padding: 10px 16px;
     border: .5px solid ;
-    border-radius: $borderIzquierdo;
-}
+}*/
 
 body{
     background: url(../imagenes/circle-degrado.png);
     background-position: -200px;
     filter: invert(150px);
+    scroll-behavior: smooth;
 }
+
+header{
+    nav{
+        div{
+            .navbar-toggler{
+                border: 1px solid $colorAcento;
+                border-radius: 5px;
+                span{
+                    filter: invert(10%);
+                }
+                &:focus{
+                    box-shadow: 0 0 0 5px #7b30dd90;
+                }
+            }
+        }
+    }
+}
+
 
 //BOOTSTRAPS
 .btn-one{

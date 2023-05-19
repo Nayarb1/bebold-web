@@ -16,6 +16,7 @@
             border: 0;
             border-radius: 10px;
             background-color: $colorSecundario;
+            transition: all .6s ease;
         }
     }
     .carousel-inner{
@@ -58,6 +59,19 @@
             border: 0;
             border-radius: 10px;
             background-color: $colorSecundario;
+            transition: all .6s ease;
+        }
+    }
+    .indicadores2{
+        right: 15%;
+        bottom: 0;
+        left: auto;
+    }
+    .carousel-inner{
+        .carousel-item{
+            animation-delay: 5s;
+            transition: all .6s ease;
+            
         }
     }
     .carousel-control-prev{
@@ -67,7 +81,9 @@
     }
     .arrow-btn-right{
         align-items: end;
-        right: 50px;
+        right: 100px;
+        top: 0;
+        bottom: 10px;
         background: url(../imagenes/arrow-right-solid2.png);
         filter: invert(0);
         background-size: 14px;
