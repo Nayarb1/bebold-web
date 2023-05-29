@@ -90,6 +90,7 @@ header{
 
 //BOOTSTRAPS
 .btn-one{
+    width: max-content;
     padding: 8px 32px;
     border: 0;
     border-radius: 5px;
@@ -98,6 +99,7 @@ header{
     transition: all .15s ease-in-out;
         &:hover{
             background: $colorAcento;
+            color: $colorFondo;
         }
 }
 

@@ -1,5 +1,5 @@
 .reserva-img{
-    width: 100%;
+    display: block;
     height: 450px;
     background: url(../imagenes/E-Reserva.jpg);
     background-repeat: no-repeat;
@@ -25,6 +25,20 @@
 .content-contact{
     div{
         form{
+            div{
+                input{
+                    &:focus{
+                        border-color: $colorAcento;
+                        box-shadow: 0 0 0 0.25rem #7b30dd51;
+                    }
+                }
+                textarea{
+                    &:focus{
+                        border-color: $colorAcento;
+                        box-shadow: 0 0 0 0.25rem #7b30dd51;
+                    }
+                }
+            }
             button{
                 width: 100%;
             }

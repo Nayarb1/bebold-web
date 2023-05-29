@@ -80,6 +80,7 @@ header nav div .navbar-toggler:focus {
 }
 
 .btn-one {
+  width: max-content;
   padding: 8px 32px;
   border: 0;
   border-radius: 5px;
@@ -89,6 +90,7 @@ header nav div .navbar-toggler:focus {
 }
 .btn-one:hover {
   background: #810AFF;
+  color: #EDEDED;
 }
 
 .container-adside {
@@ -210,10 +212,14 @@ footer .i-footer li a i {
   right: 15%;
   bottom: 0;
   left: auto;
+  top: auto;
 }
 #carouselExampleDark .carousel-inner .carousel-item {
   animation-delay: 5s;
   transition: all 0.6s ease;
+}
+#carouselExampleDark .carousel-inner .carousel-item .morado {
+  filter: saturate(90%) hue-rotate(293deg) brightness(130%) contrast(130%);
 }
 #carouselExampleDark .carousel-control-prev {
   right: 100px;
@@ -299,7 +305,7 @@ footer .i-footer li a i {
 }
 
 .reserva-img {
-  width: 100%;
+  display: block;
   height: 450px;
   background: url(../imagenes/E-Reserva.jpg);
   background-repeat: no-repeat;
@@ -322,6 +328,14 @@ footer .i-footer li a i {
   box-shadow: 0 0 150px -20px rgba(123, 48, 221, 0.5411764706);
 }
 
+.content-contact div form div input:focus {
+  border-color: #810AFF;
+  box-shadow: 0 0 0 0.25rem rgba(123, 48, 221, 0.3176470588);
+}
+.content-contact div form div textarea:focus {
+  border-color: #810AFF;
+  box-shadow: 0 0 0 0.25rem rgba(123, 48, 221, 0.3176470588);
+}
 .content-contact div form button {
   width: 100%;
 }
@@ -343,7 +357,7 @@ footer .i-footer li a i {
   height: 18em;
   object-fit: cover;
   object-position: center;
-  border-radius: 70px 0 0 0;
+  border-radius: 70px 5px 0 0;
 }
 
 #valoraciones .card {
@@ -355,19 +369,19 @@ footer .i-footer li a i {
     background-position: 0 0px;
   }
   .bd1 .content-bandai {
-    top: 60px;
+    top: 15%;
   }
   .bd2 {
     background-position: 120px 0;
   }
   .bd2 .content-bandai {
-    top: 60px;
+    top: 15%;
   }
   .bd3 {
     background-position: 70px 0;
   }
   .bd3 .content-bandai {
-    top: 40px;
+    top: 15%;
   }
   #carouselExampleDark .indicadores2 {
     right: 0;
@@ -391,19 +405,19 @@ footer .i-footer li a i {
     background-position: 0 0px;
   }
   .bd1 .content-bandai {
-    bottom: -50px;
+    top: 25%;
   }
   .bd2 {
     background-position: 120px 0;
   }
   .bd2 .content-bandai {
-    bottom: -50px;
+    top: 25%;
   }
   .bd3 {
     background-position: 70px 0;
   }
   .bd3 .content-bandai {
-    bottom: -50px;
+    top: 25%;
   }
   #carouselExampleDark .indicadores2 {
     right: 0;

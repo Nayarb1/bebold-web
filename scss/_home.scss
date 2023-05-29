@@ -66,13 +66,17 @@
         right: 15%;
         bottom: 0;
         left: auto;
+        top: auto;
     }
     .carousel-inner{
         .carousel-item{
             animation-delay: 5s;
             transition: all .6s ease;
-            
+            .morado{
+                    filter: saturate(90%) hue-rotate(293deg) brightness(130%) contrast(130%);
+            }
         }
+        
     }
     .carousel-control-prev{
         right: 100px;
