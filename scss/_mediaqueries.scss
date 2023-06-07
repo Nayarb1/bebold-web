@@ -20,21 +20,32 @@
     }
     #carouselExampleDark{
         .indicadores2{
-            right: 0;
-            left: 0;
-            bottom: -15%;
+            right: auto;
+            left: -10%;
+            bottom: -13%;
         }
         .arrow-btn-right{
             width: max-content;
             right: 24px;
-            top: 105%;
-            bottom: -15%;
+            top: 103%;
+            bottom: -14%;
             background-size: 14px;
             padding: 4px 48px;
         }
     }
     .btn-one{
         width: 100%;
+    }
+
+    #valoraciones{
+        div{
+            &:nth-child(2){
+                gap: 25px;
+            }
+            &:last-child{
+                gap: 25px;
+            }
+        }
     }
 }
 
@@ -60,21 +71,32 @@
     }
     #carouselExampleDark{
         .indicadores2{
-            right: 0;
-            left: 0;
-            bottom: 0;
+            right: auto;
+            left: -10.8%;
+            bottom: -13%;
         }
         .arrow-btn-right{
             width: max-content;
             right: 24px;
-            top: 90%;
-            bottom: 0;
+            top: 103%;
+            bottom: -14%;
             background-size: 14px;
             padding: 4px 48px;
         }
     }
     .btn-one{
         width: max-content ;
+    }
+
+    #valoraciones{
+        div{
+            &:nth-child(2){
+                gap: 25px;
+            }
+            &:last-child{
+                gap: 25px;
+            }
+        }
     }
 }
 
@@ -110,13 +132,29 @@
         }
     }
     #carouselExampleDark{
+        .indicadores2{
+            right: auto;
+            left: -7.5%;
+            bottom: -13%;
+        }
         .arrow-btn-right{
             width: max-content;
             right: 57px;
-            top: 90%;
-            bottom: 0;
+            top: 103%;
+            bottom: -14%;
             background-size: 14px;
             padding: 4px 48px;
+        }
+    }
+
+    #valoraciones{
+        div{
+            &:nth-child(2){
+                gap: 0;
+            }
+            &:last-child{
+                gap: 0;
+            }
         }
     }
 }
@@ -202,13 +240,13 @@
     }
     #carouselExampleDark{
         .indicadores2{
-            right: 5%;
-            bottom: 0;
+            right: -5%;
+            bottom: 17%;
         }
         .arrow-btn-right{
             width: max-content;
             right: 8%;
-            top: 87%;
+            top: 86%;
             bottom: 0;
             background-size: 14px;
             padding: 4px 48px;

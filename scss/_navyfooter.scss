@@ -40,16 +40,50 @@ footer{
     padding: 20px 200px;
     box-sizing: border-box;
     background-color: #F476FF11;
-    .i-footer{
-        padding-left: 0;
-        display: flex;
-        justify-content: space-between;
-        li{
-            a{
-                i{
-                    font-size: 1.2rem;
+    .footerElementos{
+        flex-direction: row wrap;
+        gap: 24px;
+        div{
+            &:first-child{
+                flex: 1;
+            }
+            &:nth-child(2){
+                min-width: max-content;
+                flex: 4;
+            }
+            &:last-child{
+                width: max-content;
+                .i-footer{
+                    padding-left: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    li{
+                        &:first-child{
+                            align-content: center;
+                            a{
+                                font-size: 1.32rem;
+                            }
+                        }
+                        &:nth-child(2){
+                            a{
+                                font-size: 1.32rem;
+                            }
+                        }
+                        &:nth-child(3){
+                            a{
+                                font-size: 1.58rem;
+                            }
+                        }
+                        &:last-child{
+                            a{
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
+    
 }

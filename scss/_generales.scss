@@ -8,7 +8,7 @@
 a{
     font-weight: 400;
     text-decoration: none;
-    color: $colorEtiqueta;
+    color: $colorTextoBody;
     &:hover{
         color: $colorAcento;
     }
@@ -115,6 +115,26 @@ header{
             height: 0.5px;
             margin: 5px 0;
             background-color: $colorBlack;
+        }
+    }
+}
+
+
+footer{
+    .footerElementos{
+        flex-direction: row wrap;
+        gap: 24px;
+        div{
+            &:first-child{
+                flex: 1;
+            }
+            &:nth-child(2){
+                min-width: max-content;
+                flex: 4;
+            }
+            &:last-child{
+                width: max-content;
+            }
         }
     }
 }

@@ -3,12 +3,21 @@
     height: 450px;
     background: url(../imagenes/E-Reserva.jpg);
     background-repeat: no-repeat;
-    background-size: cover;        
-    background-position: 0 35%;
-    div:nth-child(1){
+    background-size: 150%;        
+    background-position: 15% 39%;
+    div{
+        &:nth-child(1){
         bottom: 0;
         color: #EDEDED;
         z-index: 1;
+        }
+    }
+    .degradado{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to left, #24242499, $colorBlack);
+        position: absolute;
+        top: 0;
     }
 }
 
@@ -19,7 +28,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: 0 0 150px -20px $colorEtiqueta;
+    box-shadow: 0 0 50px -20px $colorPrincipal;
 }
 
 .content-contact{

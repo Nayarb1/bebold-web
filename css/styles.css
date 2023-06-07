@@ -7,10 +7,10 @@
 a {
   font-weight: 400;
   text-decoration: none;
-  color: rgba(123, 48, 221, 0.5411764706);
+  color: #808080;
 }
 a:hover {
-  color: #810AFF;
+  color: #7c0bff;
 }
 
 ul {
@@ -49,7 +49,7 @@ h6 {
 
 p {
   font-size: 14px;
-  color: #838383;
+  color: #808080;
 }
 
 label {
@@ -69,7 +69,7 @@ body {
 }
 
 header nav div .navbar-toggler {
-  border: 1px solid #810AFF;
+  border: 1px solid #7c0bff;
   border-radius: 5px;
 }
 header nav div .navbar-toggler span {
@@ -89,7 +89,7 @@ header nav div .navbar-toggler:focus {
   transition: all 0.15s ease-in-out;
 }
 .btn-one:hover {
-  background: #810AFF;
+  background: #7c0bff;
   color: #EDEDED;
 }
 
@@ -106,6 +106,21 @@ header nav div .navbar-toggler:focus {
   height: 0.5px;
   margin: 5px 0;
   background-color: #242424;
+}
+
+footer .footerElementos {
+  flex-direction: row wrap;
+  gap: 24px;
+}
+footer .footerElementos div:first-child {
+  flex: 1;
+}
+footer .footerElementos div:nth-child(2) {
+  min-width: max-content;
+  flex: 4;
+}
+footer .footerElementos div:last-child {
+  width: max-content;
 }
 
 header {
@@ -136,9 +151,9 @@ header nav div #navbarNav .navbar-nav .nav-item .nav-link {
   transition: all 200ms ease-in-out;
 }
 header nav div #navbarNav .navbar-nav .nav-item .nav-link:hover {
-  color: #810AFF;
+  color: #7c0bff;
   filter: opacity(1);
-  border-bottom: 2px solid #810AFF;
+  border-bottom: 2px solid #7c0bff;
 }
 
 footer {
@@ -147,13 +162,40 @@ footer {
   box-sizing: border-box;
   background-color: rgba(244, 118, 255, 0.0666666667);
 }
-footer .i-footer {
+footer .footerElementos {
+  flex-direction: row wrap;
+  gap: 24px;
+}
+footer .footerElementos div:first-child {
+  flex: 1;
+}
+footer .footerElementos div:nth-child(2) {
+  min-width: max-content;
+  flex: 4;
+}
+footer .footerElementos div:last-child {
+  width: max-content;
+}
+footer .footerElementos div:last-child .i-footer {
   padding-left: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-footer .i-footer li a i {
-  font-size: 1.2rem;
+footer .footerElementos div:last-child .i-footer li:first-child {
+  align-content: center;
+}
+footer .footerElementos div:last-child .i-footer li:first-child a {
+  font-size: 1.32rem;
+}
+footer .footerElementos div:last-child .i-footer li:nth-child(2) a {
+  font-size: 1.32rem;
+}
+footer .footerElementos div:last-child .i-footer li:nth-child(3) a {
+  font-size: 1.58rem;
+}
+footer .footerElementos div:last-child .i-footer li:last-child a {
+  font-size: 1.4rem;
 }
 
 .imgslider {
@@ -183,6 +225,14 @@ footer .i-footer li a i {
 }
 #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption {
   text-align: start;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption p {
+  filter: brightness(115%);
+}
+
+.saboresrockeros h3 {
+  color: #7b30dd;
+  margin-bottom: auto;
 }
 
 .img-intro {
@@ -217,6 +267,17 @@ footer .i-footer li a i {
 #carouselExampleDark .carousel-inner .carousel-item {
   animation-delay: 5s;
   transition: all 0.6s ease;
+}
+#carouselExampleDark .carousel-inner .carousel-item .carouselElementos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 1rem;
+}
+#carouselExampleDark .carousel-inner .carousel-item .carouselElementos a {
+  width: 100%;
+  text-align: center;
 }
 #carouselExampleDark .carousel-inner .carousel-item .morado {
   filter: saturate(90%) hue-rotate(293deg) brightness(130%) contrast(130%);
@@ -309,13 +370,20 @@ footer .i-footer li a i {
   height: 450px;
   background: url(../imagenes/E-Reserva.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 35%;
+  background-size: 150%;
+  background-position: 15% 39%;
 }
 .reserva-img div:nth-child(1) {
   bottom: 0;
   color: #EDEDED;
   z-index: 1;
+}
+.reserva-img .degradado {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(36, 36, 36, 0.6), #242424);
+  position: absolute;
+  top: 0;
 }
 
 .img-contact {
@@ -325,15 +393,15 @@ footer .i-footer li a i {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: 0 0 150px -20px rgba(123, 48, 221, 0.5411764706);
+  box-shadow: 0 0 50px -20px #7b30dd;
 }
 
 .content-contact div form div input:focus {
-  border-color: #810AFF;
+  border-color: #7c0bff;
   box-shadow: 0 0 0 0.25rem rgba(123, 48, 221, 0.3176470588);
 }
 .content-contact div form div textarea:focus {
-  border-color: #810AFF;
+  border-color: #7c0bff;
   box-shadow: 0 0 0 0.25rem rgba(123, 48, 221, 0.3176470588);
 }
 .content-contact div form button {
@@ -384,20 +452,26 @@ footer .i-footer li a i {
     top: 15%;
   }
   #carouselExampleDark .indicadores2 {
-    right: 0;
-    left: 0;
-    bottom: -15%;
+    right: auto;
+    left: -10%;
+    bottom: -13%;
   }
   #carouselExampleDark .arrow-btn-right {
     width: max-content;
     right: 24px;
-    top: 105%;
-    bottom: -15%;
+    top: 103%;
+    bottom: -14%;
     background-size: 14px;
     padding: 4px 48px;
   }
   .btn-one {
     width: 100%;
+  }
+  #valoraciones div:nth-child(2) {
+    gap: 25px;
+  }
+  #valoraciones div:last-child {
+    gap: 25px;
   }
 }
 @media screen and (min-width: 576px) {
@@ -420,20 +494,26 @@ footer .i-footer li a i {
     top: 25%;
   }
   #carouselExampleDark .indicadores2 {
-    right: 0;
-    left: 0;
-    bottom: 0;
+    right: auto;
+    left: -10.8%;
+    bottom: -13%;
   }
   #carouselExampleDark .arrow-btn-right {
     width: max-content;
     right: 24px;
-    top: 90%;
-    bottom: 0;
+    top: 103%;
+    bottom: -14%;
     background-size: 14px;
     padding: 4px 48px;
   }
   .btn-one {
     width: max-content;
+  }
+  #valoraciones div:nth-child(2) {
+    gap: 25px;
+  }
+  #valoraciones div:last-child {
+    gap: 25px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -464,13 +544,24 @@ footer .i-footer li a i {
   .bd3 .content-bandai {
     bottom: -10px;
   }
+  #carouselExampleDark .indicadores2 {
+    right: auto;
+    left: -7.5%;
+    bottom: -13%;
+  }
   #carouselExampleDark .arrow-btn-right {
     width: max-content;
     right: 57px;
-    top: 90%;
-    bottom: 0;
+    top: 103%;
+    bottom: -14%;
     background-size: 14px;
     padding: 4px 48px;
+  }
+  #valoraciones div:nth-child(2) {
+    gap: 0;
+  }
+  #valoraciones div:last-child {
+    gap: 0;
   }
 }
 @media screen and (min-width: 992px) {
@@ -544,13 +635,13 @@ footer .i-footer li a i {
     bottom: -15px;
   }
   #carouselExampleDark .indicadores2 {
-    right: 5%;
-    bottom: 0;
+    right: -5%;
+    bottom: 17%;
   }
   #carouselExampleDark .arrow-btn-right {
     width: max-content;
     right: 8%;
-    top: 87%;
+    top: 86%;
     bottom: 0;
     background-size: 14px;
     padding: 4px 48px;

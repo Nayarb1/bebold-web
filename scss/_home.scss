@@ -30,11 +30,20 @@
             }
             .carousel-caption{
                 text-align: start;
+                p{
+                    filter: brightness(115%);
+                }
             }
         }
     }
 }
 
+.saboresrockeros{
+    h3{
+        color: $colorPrincipal;
+        margin-bottom: auto;
+    }
+}
 
 .img-intro{
     width: 550px;
@@ -72,6 +81,17 @@
         .carousel-item{
             animation-delay: 5s;
             transition: all .6s ease;
+            .carouselElementos{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                gap: 1rem;
+                a{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
             .morado{
                     filter: saturate(90%) hue-rotate(293deg) brightness(130%) contrast(130%);
             }
