@@ -35,6 +35,11 @@ h3 {
   margin-bottom: 16px;
 }
 
+.textcolor {
+  color: #7b30dd;
+  margin-top: 24px;
+}
+
 h4 {
   font-size: 16px;
   font-weight: 700;
@@ -375,8 +380,10 @@ footer .footerElementos div:last-child .i-footer li:last-child a {
 }
 .reserva-img div:nth-child(1) {
   bottom: 0;
-  color: #EDEDED;
   z-index: 1;
+}
+.reserva-img div:nth-child(1) h1 {
+  color: #EDEDED;
 }
 .reserva-img .degradado {
   width: 100%;

@@ -8,8 +8,10 @@
     div{
         &:nth-child(1){
         bottom: 0;
-        color: #EDEDED;
         z-index: 1;
+        h1{
+            color: #EDEDED;
+        }
         }
     }
     .degradado{
